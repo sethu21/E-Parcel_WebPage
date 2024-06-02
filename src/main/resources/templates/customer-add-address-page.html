@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Address to Customer</title>
+</head>
+<body>
+<h1>Add Address to Customer</h1>
+<form action="/customer/add/address/{customerId}" method="post">
+    <label for="houseNo">House Number:</label>
+    <input type="text" id="houseNo" name="houseNo" required><br>
+
+    <label for="streetOrHouseTitle">Street or House Title:</label>
+    <input type="text" id="streetOrHouseTitle" name="streetOrHouseTitle" required><br>
+
+    <label for="city">City:</label>
+    <select id="city" name="city">
+        <option value="RIGA">Riga</option>
+        <option value="VENTSPILS">Ventspils</option>
+        <option value="LIEPAJA">Liepaja</option>
+    </select><br>
+
+    <button type="submit">Add Address</button>
+</form>
+</body>
+</html>

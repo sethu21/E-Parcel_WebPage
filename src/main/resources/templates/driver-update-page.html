@@ -1,0 +1,20 @@
+<!-- driver-update-page.html -->
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Update Driver</title>
+</head>
+<body>
+<h1>Update Driver</h1>
+<form action="/driver/update/{id}" method="post" th:object="${driver}">
+    <input type="hidden" th:field="*{id}">
+    First Name: <input type="text" th:field="*{firstName}"><br>
+    Last Name: <input type="text" th:field="*{lastName}"><br>
+    Person Code: <input type="text" th:field="*{personCode}"><br>
+    Experience: <input type="number" th:field="*{experienceInYears}"><br>
+    License No: <input type="text" th:field="*{licenseNo}"><br>
+    <input type="submit" value="Submit">
+</form>
+</body>
+</html>

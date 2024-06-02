@@ -1,0 +1,17 @@
+<!-- driver-one-page.html -->
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Driver Details</title>
+</head>
+<body>
+<h1>Driver Details</h1>
+<p>ID: <span th:text="${driver.id}"></span></p>
+<p>First Name: <span th:text="${driver.firstName}"></span></p>
+<p>Last Name: <span th:text="${driver.lastName}"></span></p>
+<p>Person Code: <span th:text="${driver.personCode}"></span></p>
+<p>Experience: <span th:text="${driver.experienceInYears}"></span></p>
+<p>License No: <span th:text="${driver.licenseNo}"></span></p>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!-- driver-all-page.html -->
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>All Drivers</title>
+</head>
+<body>
+<h1>All Drivers</h1>
+<table>
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Person Code</th>
+        <th>Experience</th>
+        <th>License No</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="driver : ${driver}">
+        <td th:text="${driver.id}"></td>
+        <td th:text="${driver.firstName}"></td>
+        <td th:text="${driver.lastName}"></td>
+        <td th:text="${driver.personCode}"></td>
+        <td th:text="${driver.experienceInYears}"></td>
+        <td th:text="${driver.licenseNo}"></td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>

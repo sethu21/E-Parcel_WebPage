@@ -1,0 +1,19 @@
+<!-- driver-add-page.html -->
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Driver</title>
+</head>
+<body>
+<h1>Add Driver</h1>
+<form action="/driver/add" method="post" th:object="${driver}">
+    First Name: <input type="text" th:field="*{firstName}"><br>
+    Last Name: <input type="text" th:field="*{lastName}"><br>
+    Person Code: <input type="text" th:field="*{personCode}"><br>
+    Experience: <input type="number" th:field="*{experienceInYears}"><br>
+    License No: <input type="text" th:field="*{licenseNo}"><br>
+    <input type="submit" value="Submit">
+</form>
+</body>
+</html>
